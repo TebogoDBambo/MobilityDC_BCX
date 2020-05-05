@@ -1,0 +1,56 @@
+﻿
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    x:Class="MobilityDC.Views.MenuPage"
+    Title="Menu">
+    <StackLayout VerticalOptions="FillAndExpand">
+        <StackLayout MinimumHeightRequest="500" BackgroundColor="#687087" Orientation="Vertical">
+             <!--<Frame CornerRadius="100" 
+           HeightRequest="200"
+           WidthRequest="200"
+           HorizontalOptions="Center"
+           Padding="0"
+           IsClippedToBounds="True"
+                    BackgroundColor="#687087"
+                    BorderColor="White"
+                    VerticalOptions="Center"
+                    Margin="0,10,0,0">
+        <Image Source="userIcon" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+    </Frame>-->
+            
+        </StackLayout>
+    <StackLayout>
+        <ListView x:Name="ListViewMenu" HasUnevenRows="True">
+            <d:ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Home</x:String>
+                    <x:String>Bulk Pick</x:String>
+                    <x:String>Fine Pick</x:String>
+                    <x:String>Store Pick</x:String>
+                    <x:String>Help</x:String>
+                    <x:String>Sign Out</x:String>
+                </x:Array>
+            </d:ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Label Text="{Binding Title}" d:Text="{Binding .}" FontSize="20" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+    <StackLayout>
+        <Button Text="Switch" TextColor="White" BackgroundColor="#687087" Margin="100,10,100,10"/>
+    </StackLayout>
+   </StackLayout>
+</ContentPage>

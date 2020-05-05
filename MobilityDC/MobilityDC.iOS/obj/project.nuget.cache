@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "8kdFMs9byowvikPjDkmZEkaxLxR1GcvJJKAqJ29sgq+gIM9C1v5vYtV1HzQa0/cvKgEErl9vAsfLWpbv5I8Lrg==",
+  "success": true,
+  "projectFilePath": "C:\\Development\\Dolfin\\Trunk\\MobilityDC SingleTask APP\\MobilityDC\\MobilityDC\\MobilityDC.iOS\\MobilityDC.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\teogo\\.nuget\\packages\\autofac\\5.1.4\\autofac.5.1.4.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\autofac.extras.commonservicelocator\\6.0.0\\autofac.extras.commonservicelocator.6.0.0.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\commonservicelocator\\2.0.5\\commonservicelocator.2.0.5.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\xamarin.essentials\\1.5.3.1\\xamarin.essentials.1.5.3.1.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512"
+  ],
+  "logs": []
+}

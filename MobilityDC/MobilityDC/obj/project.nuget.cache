@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "csc8flrY6c9xA/rh3A6JOG+1snUQkSjYeupqXVvSkxRdhlVqkpntE4UIzp3ST1t43v3ud5XfGRLp8ANYveabTg==",
+  "success": true,
+  "projectFilePath": "C:\\Development\\Dolfin\\Trunk\\MobilityDC SingleTask APP\\MobilityDC\\MobilityDC\\MobilityDC\\MobilityDC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\teogo\\.nuget\\packages\\autofac\\5.1.4\\autofac.5.1.4.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\autofac.extras.commonservicelocator\\6.0.0\\autofac.extras.commonservicelocator.6.0.0.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\commonservicelocator\\2.0.5\\commonservicelocator.2.0.5.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\xamarin.essentials\\1.5.3.1\\xamarin.essentials.1.5.3.1.nupkg.sha512",
+    "C:\\Users\\teogo\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512"
+  ],
+  "logs": []
+}

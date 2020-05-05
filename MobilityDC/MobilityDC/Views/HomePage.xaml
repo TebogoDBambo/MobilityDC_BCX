@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobilityDC.Views.HomePage"
+    xmlns:vm="clr-namespace:MobilityDC.ViewModels"
+    BindingContext="{Binding Home, Source={StaticResource Locator}}"
+    Title="Home">
+
+    <ContentPage.Content>
+   
+        <Grid>
+            <StackLayout>
+           <StackLayout HorizontalOptions="Center" Margin="0,20,0,0">
+                <Frame CornerRadius="40"
+                       BackgroundColor="#687087"
+                       HeightRequest="40"
+                       WidthRequest="40"
+                       HorizontalOptions="Center"
+                       IsClippedToBounds="True">
+                    <Image Source="userIcon"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </Frame>
+               <Label Text="Tebogo Bambo" FontSize="16" HorizontalOptions="Center" TextColor="#687087"/>
+               <Label Text="tebogo@bcx.co.za" FontSize="10" HorizontalOptions="Center" TextColor="Gray"/>
+           </StackLayout>
+
+           <StackLayout  HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        Margin="20,20,0,0">
+               <StackLayout Margin="40,0,20,0">
+                   <ImageButton Source="stacking"
+                                HeightRequest="30"
+                                Command="{Binding BulkPickCommand}"/>
+                   <Label Text="Bulk Pick"
+                          FontSize="14"
+                          FontAttributes="None"
+                          HorizontalOptions="Center"
+                          TextColor="#687087"/>
+               </StackLayout>
+               <StackLayout Margin="10,0,10,0">
+                   <ImageButton Source="checklistIcon"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"
+                                HeightRequest="30"
+                                Command="{Binding FinePickCommand}"/>
+                   <Label Text="Fine Pick"
+                          FontSize="14"
+                          FontAttributes="None"
+                          HorizontalOptions="Center"
+                          TextColor="#687087"/>
+               </StackLayout>
+               <StackLayout Margin="20,0,0,0">
+                   <ImageButton Source="storeBoxIcon"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                HeightRequest="30"
+                                Command="{Binding StorePickCommand}"/>
+                   <Label Text="Store Pick"
+                          FontSize="14"
+                          FontAttributes="None"
+                          HorizontalOptions="Center"
+                          TextColor="#687087"/>
+               </StackLayout>
+           </StackLayout>
+           <StackLayout 
+                        HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal" Margin="20,0,0,0">
+               <StackLayout Margin="65,0,0,0">
+                   <ImageButton Source="helpIcon"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                HeightRequest="30"
+                                Command="{Binding HelpCommand}"/>
+                   <Label Text="Help"
+                          FontSize="14"
+                          FontAttributes="None"
+                          HorizontalOptions="Center" TextColor="#687087"/>
+               </StackLayout>
+ 
+           </StackLayout>
+           <StackLayout HorizontalOptions="Center"
+               Margin="0,20,0,0">
+               <Button Text="Close"
+                       TextColor="White"
+                       BackgroundColor="#687087"
+                       WidthRequest="200"
+                       CornerRadius="20"
+                       Command="{Binding CloseCommand}"/>
+           </StackLayout>
+    </StackLayout>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>
+

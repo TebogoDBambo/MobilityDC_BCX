@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobilityDC.Views.FinePickPage"
+    Title="Fine Pick">
+
+     <ContentPage.Content>
+            <Grid>
+            <ScrollView>
+              <StackLayout Padding="40,10,40,0">
+                  
+                    <Button Text="{Binding CurrentTask.DocumentNo}"
+                         FontSize="Large"
+                         HorizontalOptions="Center"
+                         TextColor="#687087"
+                          CornerRadius="20"/>  
+
+              <StackLayout Margin="0,5,0,0"
+                           HorizontalOptions="FillAndExpand">
+                     <Label Text="SKU Code"
+                            FontSize="Default"
+                            VerticalOptions="Center"
+                            TextColor ="#687087"/>
+                  <Entry Placeholder="SKU Code"                          
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="LightGray"
+                          TextColor="Gray"
+                          WidthRequest="220"
+                         Text="{Binding CurrentTask.SKUcode}"/>
+              
+            </StackLayout>
+
+            <StackLayout Margin="0,5,0,0"
+                         HorizontalOptions="FillAndExpand">
+                <Label Text="From"
+                         FontSize="Default"
+                            VerticalOptions="Center"
+                              TextColor="#687087"/>
+                    <Entry Placeholder="From"                            
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundColor="LightGray"
+                            TextColor="Gray"
+                            WidthRequest="220"
+                           Text="{Binding CurrentTask.FromLocationID}"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,5,0,0"
+                         Orientation="Horizontal"
+                         HorizontalOptions="FillAndExpand">
+                <StackLayout>
+                    <Label Text="Box For"
+                         FontSize="Default"
+                            VerticalOptions="Center"
+                              TextColor="#687087"/>
+                <Entry Placeholder="Box For"
+                        HorizontalOptions="FillAndExpand"                       
+                        TextColor="Gray"
+                        WidthRequest="280"
+                        BackgroundColor="White"
+                        Text="{Binding CurrentTask.BoxNo}"/>
+                </StackLayout>
+                <StackLayout WidthRequest="25" VerticalOptions="End">
+                   <ImageButton
+                    Source="add"/>
+                </StackLayout>
+            </StackLayout>
+
+              <StackLayout Margin="0,5,0,0"
+                           Orientation="Horizontal">
+                  <StackLayout>
+                       <Label Text="SKU Code"
+                         FontSize="Default"
+                            VerticalOptions="Center"
+                              TextColor="#687087"/>
+                    <Entry Placeholder="SKU Code"                         
+                          HorizontalOptions="FillAndExpand"
+                          BackgroundColor="White"
+                          TextColor="Gray"
+                          WidthRequest="280"
+                           Text="{Binding SkuCode}"/>
+                  </StackLayout>
+                  <StackLayout WidthRequest="25" VerticalOptions="End">
+                   <ImageButton
+                    Source="add"/>
+                  </StackLayout>
+
+            </StackLayout>
+
+              <StackLayout Margin="0,5,0,0"
+                           Orientation="Horizontal"
+                           HorizontalOptions="FillAndExpand"
+                           HeightRequest="50">
+                  <Button Margin="10"
+                          BackgroundColor="Red"
+                          Text="{Binding CurrentTask.Quantity}"
+                          TextColor="white"
+                          FontSize="Large"/>
+                  <Entry HorizontalOptions="FillAndExpand"
+                            BackgroundColor="LightGray"
+                            TextColor="Gray"
+                          HeightRequest="20"
+                          Placeholder="0"
+                         Text="{Binding Quantity}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Margin="0,5,0,0">
+                <Button Text="Hold"  
+                        BackgroundColor="#687087"
+                        TextColor="White"
+                        WidthRequest="150"
+                        CornerRadius="20"
+                        Command="{Binding HoldCommand}"
+                        />
+                <Button Text="Complete"
+                        BackgroundColor="#249c34"
+                        TextColor="White"
+                        WidthRequest="150"
+                        CornerRadius="20"
+                        Command="{Binding NextCommand}"
+                        />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Margin="0,5,0,0">
+                <Button Text="Back"
+                        BackgroundColor="Red"
+                        TextColor="White"
+                        WidthRequest="150"
+                        CornerRadius="20"
+                        Command="{Binding BackCommand}"
+                        />
+                <Button Text="Skip"
+                        BackgroundColor="#bdb835"
+                        TextColor="White"
+                        WidthRequest="150"
+                        CornerRadius="20"
+                        Command="{Binding SkipCommand}"
+                        />
+            </StackLayout>
+        </StackLayout>
+            </ScrollView>
+                <ActivityIndicator IsRunning="{Binding Busy, Mode=OneWay}"
+                                   IsVisible="{Binding Busy, Mode=OneWay}"
+                                   HeightRequest="40"
+                                   VerticalOptions="CenterAndExpand"
+                                   HorizontalOptions="CenterAndExpand">
+                    <ActivityIndicator.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="100" Android="100" />
+                    </ActivityIndicator.WidthRequest>
+                    <ActivityIndicator.Color>
+                        <OnPlatform x:TypeArguments="Color"
+                                    iOS="#687087" />
+                    </ActivityIndicator.Color>
+                </ActivityIndicator>
+            </Grid>
+        </ContentPage.Content>
+</ContentPage>

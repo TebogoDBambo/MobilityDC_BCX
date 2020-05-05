@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobilityDC.Views.BulkPickSearchPage"
+    xmlns:vm="clr-namespace:MobilityDC.ViewModels"
+    BindingContext="{Binding BulkPickSearch, Source={StaticResource Locator}}"
+    Title="Bulk Pick Search">
+    <Grid>
+    <ScrollView>
+    <StackLayout Padding="40" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="CenterAndExpand">
+            <StackLayout>
+                <Entry Placeholder="From Location"
+                       TextColor="Gray"
+                       WidthRequest="200"
+                       HorizontalOptions="Center"
+                       Text="{Binding SearchFromLocationCode, Mode=OneWay}"/>
+            </StackLayout>
+            <StackLayout WidthRequest="30">
+                <ImageButton
+                    HorizontalOptions="Center"
+                    Source="add"/>
+            </StackLayout>
+          
+        </StackLayout>
+          <StackLayout Orientation="Horizontal"
+                       HorizontalOptions="CenterAndExpand">
+              <StackLayout>
+                  <Entry Placeholder="Product"
+                         TextColor="Gray"
+                         WidthRequest="200"
+                         HorizontalOptions="Center"
+                         Text="{Binding SearchProduct, Mode=OneWay}"/>
+              </StackLayout>
+              <StackLayout WidthRequest="30">
+                  <ImageButton
+                      HorizontalOptions="Center"
+                      Source="add"/>
+              </StackLayout>
+        </StackLayout>
+          <StackLayout Orientation="Horizontal"
+                       HorizontalOptions="CenterAndExpand">
+              <StackLayout>
+            <Entry Placeholder="Barcode"                    
+                        TextColor="Gray"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                   Text="{Binding SearchBarcode, Mode=OneWay}"/>
+              </StackLayout>
+            <StackLayout WidthRequest="30">
+                <ImageButton
+                    HorizontalOptions="Center"
+                    Source="add"/>
+            </StackLayout>
+        </StackLayout>
+          <StackLayout Orientation="Horizontal"
+                       HorizontalOptions="CenterAndExpand">
+              <StackLayout>
+            <Entry Placeholder="Document No"                   
+                        TextColor="Gray"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                   Text="{Binding SearchDocumentNo, Mode=OneWay}"/>
+              </StackLayout>
+             <StackLayout WidthRequest="30">
+                <ImageButton
+                    HorizontalOptions="Center"
+                    Source="add"/>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout HorizontalOptions="FillAndExpand"
+                     Margin="0,10,0,0">
+                     
+            <Button Text="Search"
+                    BackgroundColor="#687087"
+                    TextColor="White"
+                    CornerRadius="20"
+                    WidthRequest="10"
+                    HeightRequest="50"
+                    Command="{Binding SearchCommand}"/>
+        </StackLayout>
+    </StackLayout>
+        </ScrollView>
+        <ActivityIndicator IsRunning="{Binding Busy, Mode=OneWay}"
+                               IsVisible="{Binding Busy, Mode=OneWay}"
+                               HeightRequest="40"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand">
+                <ActivityIndicator.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="100" Android="100" />
+                </ActivityIndicator.WidthRequest>
+                <ActivityIndicator.Color>
+                    <OnPlatform x:TypeArguments="Color"
+                                iOS="#687087" />
+                </ActivityIndicator.Color>
+            </ActivityIndicator>
+    </Grid>
+</ContentPage>

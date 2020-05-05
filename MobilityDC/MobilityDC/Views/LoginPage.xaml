@@ -1,0 +1,84 @@
+﻿
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobilityDC.Views.LoginPage"
+    Title="Sign In"
+     BindingContext="{Binding Login, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <Grid>
+        <ScrollView BackgroundColor="#F0F1F6">
+            <Grid BackgroundColor="#F0F1F6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0"
+                             Grid.ColumnSpan="4"
+                             HorizontalOptions="Center"
+                             Margin="0,20,0,0">
+                        <Frame CornerRadius="40"
+                               BackgroundColor="White"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               HorizontalOptions="Center"
+                               IsClippedToBounds="True">
+                            <Image Source="dolfinLogo"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center" />
+                        </Frame>
+
+                    <Label Text="Mobility DC"
+                           FontSize="Large"
+                           HorizontalOptions="Center" />
+                    <Label Text="Scanner App"
+                           TextColor="Gray"
+                           HorizontalOptions="Center"
+                           FontSize="Micro"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.ColumnSpan="4" Padding="20">
+                    <Entry Placeholder="User ID" FontSize="14" Text="{Binding UserId}"/>
+                    <Entry Placeholder="Password" FontSize="14" Text="{Binding Password}"/>
+                    <Entry Placeholder="Scanner ID" FontSize="14" Text="{Binding DeviceNumber}"/>
+                    <Button Text="Sign In"
+                            BackgroundColor="#687087"
+                            TextColor="White"
+                            Margin="0,10,0,0"
+                            CornerRadius="17"
+                            HeightRequest="35"
+                            Command="{Binding SignInCommand}"
+                            IsEnabled="{Binding ButtonBusy}"/>
+
+                <Label Text="By proceeding you also agree to the Terms of Service and Privacy Policy"
+                       TextColor="Gray"
+                       FontSize="10"
+                       HorizontalOptions="Center"
+                       Padding="20"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+            <ActivityIndicator IsRunning="{Binding Busy, Mode=OneWay}"
+                               IsVisible="{Binding Busy, Mode=OneWay}"
+                               HeightRequest="40"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand">
+                <ActivityIndicator.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="100" Android="100" />
+                </ActivityIndicator.WidthRequest>
+                <ActivityIndicator.Color>
+                    <OnPlatform x:TypeArguments="Color"
+                                iOS="#687087" />
+                </ActivityIndicator.Color>
+            </ActivityIndicator>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
