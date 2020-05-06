@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using MobilityDC.Api.Models.DTO;
+﻿using System.Collections.Generic;
 using MobilityDC.Models;
+using MobilityDC.Models.DTO;
 using MobilityDC.Services.NavigationService;
 using MobilityDC.ViewModels;
 using Xamarin.Forms;
@@ -14,7 +13,7 @@ namespace MobilityDC.Views
 
         private INavigationService _navigationService;
 
-        public FinePickPage(INavigationService navigationService, PickModelSearch modelSearch, TaskModel task)
+        public FinePickPage(INavigationService navigationService, FinePickModelSearch modelSearch, GetNextTaskModel task)
         {
             InitializeComponent();
 

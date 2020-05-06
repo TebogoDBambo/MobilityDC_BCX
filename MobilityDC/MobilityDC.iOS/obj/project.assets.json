@@ -4,11 +4,14 @@
     "Xamarin.iOS,Version=v1.0": {
       "Autofac/5.1.4": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
         "compile": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         }
       },
       "Autofac.Extras.CommonServiceLocator/6.0.0": {
@@ -27,10 +30,22 @@
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -40,6 +55,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
         }
       },
       "Xamarin.Essentials/1.5.3.1": {
@@ -172,8 +196,8 @@
           }
         },
         "build": {
-          "buildTransitive/Xamarin.Forms.props": {},
-          "buildTransitive/Xamarin.Forms.targets": {}
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
         }
       },
       "MobilityDC/1.0.0": {
@@ -197,11 +221,14 @@
     "Xamarin.iOS,Version=v1.0/win": {
       "Autofac/5.1.4": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
         "compile": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         }
       },
       "Autofac.Extras.CommonServiceLocator/6.0.0": {
@@ -220,10 +247,22 @@
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -233,6 +272,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
         }
       },
       "Xamarin.Essentials/1.5.3.1": {
@@ -365,8 +413,8 @@
           }
         },
         "build": {
-          "buildTransitive/Xamarin.Forms.props": {},
-          "buildTransitive/Xamarin.Forms.targets": {}
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
         }
       },
       "MobilityDC/1.0.0": {
@@ -390,11 +438,14 @@
     "Xamarin.iOS,Version=v1.0/win-x64": {
       "Autofac/5.1.4": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
         "compile": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         }
       },
       "Autofac.Extras.CommonServiceLocator/6.0.0": {
@@ -413,10 +464,22 @@
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -426,6 +489,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
         }
       },
       "Xamarin.Essentials/1.5.3.1": {
@@ -558,8 +630,8 @@
           }
         },
         "build": {
-          "buildTransitive/Xamarin.Forms.props": {},
-          "buildTransitive/Xamarin.Forms.targets": {}
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
         }
       },
       "MobilityDC/1.0.0": {
@@ -583,11 +655,14 @@
     "Xamarin.iOS,Version=v1.0/win-x86": {
       "Autofac/5.1.4": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
         "compile": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {}
         }
       },
       "Autofac.Extras.CommonServiceLocator/6.0.0": {
@@ -606,10 +681,22 @@
       "CommonServiceLocator/2.0.5": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/CommonServiceLocator.dll": {}
+          "lib/netstandard2.0/CommonServiceLocator.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.2"
+        },
+        "compile": {
+          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -619,6 +706,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/xamarinios10/_._": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/_._": {}
         }
       },
       "Xamarin.Essentials/1.5.3.1": {
@@ -751,8 +847,8 @@
           }
         },
         "build": {
-          "buildTransitive/Xamarin.Forms.props": {},
-          "buildTransitive/Xamarin.Forms.targets": {}
+          "build/Xamarin.Forms.props": {},
+          "build/Xamarin.Forms.targets": {}
         }
       },
       "MobilityDC/1.0.0": {
@@ -833,6 +929,30 @@
         "lib/netstandard2.1/CommonServiceLocator.dll"
       ]
     },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "sha512": "1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
+      "type": "package",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Newtonsoft.Json/12.0.3": {
       "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
@@ -862,6 +982,41 @@
         "newtonsoft.json.12.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.2": {
+      "sha512": "BG/TNxDFv0svAzx8OiMXDlsHfGw623BZ8tCXw4YLhDFDvDhNUEV58jKYMGRnkbJNm7c3JNNJDiN7JBMzxRBR2w==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Xamarin.Essentials/1.5.3.1": {

@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using MobilityDC.Api.Models.DTO;
-using MobilityDC.Data.Services;
 using MobilityDC.Models;
+using MobilityDC.Models.Commons;
+using MobilityDC.Models.DTO;
 using MobilityDC.Services.NavigationService;
 using MobilityDC.Views;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace MobilityDC.ViewModels
 {
     public class FinePickSearchViewModel : BaseViewModel
     {
-        public List<TaskModel> observablePicks { get; set; } = new List<TaskModel>();
-
         private string _searchFromLocationCode;
         public string SearchFromLocationCode
         {
@@ -106,41 +105,51 @@ namespace MobilityDC.ViewModels
 
         }
 
+        private string getNullValue(string text)
+        {
+            return String.IsNullOrEmpty(text) ? null : text;
+        }
+
+        private string formatFinalLocation(string storeNo)
+        {
+            if (String.IsNullOrEmpty(storeNo))
+                return storeNo;
+
+                return !storeNo.Contains(".") ? String.Format(".{0}", storeNo) : storeNo;
+        }
+
         public async Task SearchAndPopulate()
         {
             Busy = true;
-            var data = new PickDataStore();
 
-            var pickModelSearch = new PickModelSearch()
+            FinePickModelSearch model = new FinePickModelSearch
             {
-                SearchFromLocationCode = _searchFromLocationCode,
-                SearchBarcode = _searchBarcode,
-                SearchDocumentNo = _searchDocumentNo,
-                SearchProduct = _searchProduct,
-                SearchFinalLocationCode = _finalDesitnation,
-                TaskType = "ILTFB"
+                SearchBarcode = getNullValue(_searchBarcode),
+                SearchFromLocationCode = getNullValue(_searchFromLocationCode),
+                SearchToLocationCode = formatFinalLocation(getNullValue(_finalDesitnation)),
+                SearchDocumentNo = getNullValue(_searchDocumentNo),
+                SearchProduct = getNullValue(_searchProduct)
             };
 
             try
             {
-                var results = await data.GetItemAsync(pickModelSearch, "80");
+                Result result = ConnectionService.SearchFinePick(model, AppSession.UserId, false);
 
-                if (results == null)
+                if (result.Status)
                 {
-                    Busy = false;
-                    await _navigationService.DisplayAlert("Alert", "Fine Pick Empty", "Ok");
+                    await _navigationService.PushAsync(new FinePickPage(_navigationService, model, JsonConvert.DeserializeObject<GetNextTaskModel>(result.Data.ToString())));
                 }
                 else
                 {
-                    Busy = false;
-                    await _navigationService.PushAsync(new FinePickPage(_navigationService, pickModelSearch, (TaskModel)results.Data));
+                    await _navigationService.DisplayAlert("Search - Fine Pick", result.Message, "Ok");
                 }
             }
             catch (Exception ex)
             {
-                Busy = false;
-                await _navigationService.DisplayAlert("Server.", ex.Message, "Ok");
+                await _navigationService.DisplayAlert("Error - Search", ex.InnerException.StackTrace, "Ok");
             }
+
+            Busy = false;
         }
     }
 }

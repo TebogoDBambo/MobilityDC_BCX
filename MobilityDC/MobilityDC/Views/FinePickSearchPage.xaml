@@ -15,7 +15,7 @@
                        TextColor="Gray"
                        WidthRequest="200"
                        HorizontalOptions="Center"
-                       Text="{Binding SearchFromLocationCode, Mode=OneWay}"/>
+                       Text="{Binding SearchFromLocationCode, Mode=TwoWay}"/>
             </StackLayout>
             <StackLayout WidthRequest="30">
                 <ImageButton
@@ -24,44 +24,29 @@
             </StackLayout>
           
         </StackLayout>
-         <StackLayout Orientation="Horizontal"
+                <StackLayout Orientation="Horizontal"
                        HorizontalOptions="CenterAndExpand">
-              <StackLayout>
-            <Entry Placeholder="Final Destination"                    
+                    <StackLayout>
+                        <Entry Placeholder="Final Destination"                    
                         TextColor="Gray"
                     WidthRequest="200"
                     HorizontalOptions="Center"
-                   Text="{Binding FinalDestination, Mode=OneWay}"/>
-              </StackLayout>
-            <StackLayout WidthRequest="30">
-                <ImageButton
+                   Text="{Binding FinalDestination, Mode=TwoWay}"/>
+                    </StackLayout>
+                    <StackLayout WidthRequest="30">
+                        <ImageButton
                     HorizontalOptions="Center"
                     Source="add"/>
-            </StackLayout>
-        </StackLayout>
-          <StackLayout Orientation="Horizontal"
-                       HorizontalOptions="CenterAndExpand">
-              <StackLayout>
-                  <Entry Placeholder="Product"
-                         TextColor="Gray"
-                         WidthRequest="200"
-                         HorizontalOptions="Center"
-                         Text="{Binding SearchProduct, Mode=OneWay}"/>
-              </StackLayout>
-              <StackLayout WidthRequest="30">
-                  <ImageButton
-                      HorizontalOptions="Center"
-                      Source="add"/>
-              </StackLayout>
-        </StackLayout>
-          <StackLayout Orientation="Horizontal"
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
                        HorizontalOptions="CenterAndExpand">
               <StackLayout>
             <Entry Placeholder="Barcode"                    
                         TextColor="Gray"
                     WidthRequest="200"
                     HorizontalOptions="Center"
-                   Text="{Binding SearchBarcode, Mode=OneWay}"/>
+                   Text="{Binding SearchBarcode, Mode=TwoWay}"/>
               </StackLayout>
             <StackLayout WidthRequest="30">
                 <ImageButton
@@ -77,7 +62,7 @@
                         TextColor="Gray"
                     WidthRequest="200"
                     HorizontalOptions="Center"
-                   Text="{Binding SearchDocumentNo, Mode=OneWay}"/>
+                   Text="{Binding SearchDocumentNo, Mode=TwoWay}"/>
               </StackLayout>
              <StackLayout WidthRequest="30">
                 <ImageButton

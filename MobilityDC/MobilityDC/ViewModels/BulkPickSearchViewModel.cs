@@ -110,7 +110,7 @@ namespace MobilityDC.ViewModels
             {
                 var result = ConnectionService.SearchBulkPick(bulkModelSearch, AppSession.UserId);
 
-                if (result == null)
+                if (!result.Status)
                 {
                     Busy = false;
                     await _navigationService.DisplayAlert("Alert", result.Message, "Ok");

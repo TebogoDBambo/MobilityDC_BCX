@@ -16,5 +16,10 @@ namespace MobilityDC.Models.Commons
         public static int ExecutingTaskId { get; set; }
         public static int CurrentWaveId { get; set; }
         public static bool MoveToException { get; set; }
+
+        public static List<int> TaskIds { get; set; }
+        public static int LastRoleId { get; set; }
+        public static bool IsHireWave { get; set; }
+        public static bool BulkPickByQty { get; set; }
     }
 }

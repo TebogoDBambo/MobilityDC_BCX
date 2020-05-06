@@ -8,19 +8,19 @@ namespace MobilityDC.Views
 {
     public partial class BulkPickPage : ContentPage
     {
-       
+
 
         private INavigationService _navigationService;
         public BulkPickPage()
         {
             InitializeComponent();
         }
-            public BulkPickPage(INavigationService navigationService, GetNextTaskModel modelSearch)
+        public BulkPickPage(INavigationService navigationService, GetNextTaskModel modelSearch)
         {
             InitializeComponent();
             _navigationService = navigationService;
 
-            this.BindingContext = new BulkPickViewModel( navigationService, modelSearch);
+            this.BindingContext = new BulkPickViewModel(navigationService, modelSearch);
         }
     }
 }

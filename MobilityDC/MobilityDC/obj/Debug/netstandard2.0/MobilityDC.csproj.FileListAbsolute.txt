@@ -1,3 +1,7 @@
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\MobilityDC.deps.json
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\MobilityDC.dll
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\ref\MobilityDC.dll
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\MobilityDC.pdb
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\MobilityDC.csprojAssemblyReference.cache
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
@@ -18,10 +22,6 @@ C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\Mobi
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\MobilityDC.csproj.CoreCompileInputs.cache
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\MobilityDC.AssemblyInfoInputs.cache
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\MobilityDC.AssemblyInfo.cs
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\MobilityDC.deps.json
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\MobilityDC.dll
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\ref\MobilityDC.dll
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\bin\Debug\netstandard2.0\MobilityDC.pdb
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\MobilityDC.dll
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC\obj\Debug\netstandard2.0\ref\MobilityDC.dll

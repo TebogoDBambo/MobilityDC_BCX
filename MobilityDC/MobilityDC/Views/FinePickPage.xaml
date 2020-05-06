@@ -9,8 +9,8 @@
             <Grid>
             <ScrollView>
               <StackLayout Padding="40,10,40,0">
-                  
-                    <Button Text="{Binding CurrentTask.DocumentNo}"
+
+                    <Button Text="{Binding DataContext.DocumentNo}"
                          FontSize="Large"
                          HorizontalOptions="Center"
                          TextColor="#687087"
@@ -27,7 +27,7 @@
                           BackgroundColor="LightGray"
                           TextColor="Gray"
                           WidthRequest="220"
-                         Text="{Binding CurrentTask.SKUcode}"/>
+                         Text="{Binding DataContext.Barcode}"/>
               
             </StackLayout>
 
@@ -42,7 +42,7 @@
                             BackgroundColor="LightGray"
                             TextColor="Gray"
                             WidthRequest="220"
-                           Text="{Binding CurrentTask.FromLocationID}"/>
+                           Text="{Binding DataContext.FromLocationID}"/>
             </StackLayout>
 
             <StackLayout Margin="0,5,0,0"
@@ -58,7 +58,7 @@
                         TextColor="Gray"
                         WidthRequest="280"
                         BackgroundColor="White"
-                        Text="{Binding CurrentTask.BoxNo}"/>
+                        Text="{Binding DataContext.BoxNo}"/>
                 </StackLayout>
                 <StackLayout WidthRequest="25" VerticalOptions="End">
                    <ImageButton
@@ -93,7 +93,7 @@
                            HeightRequest="50">
                   <Button Margin="10"
                           BackgroundColor="Red"
-                          Text="{Binding CurrentTask.Quantity}"
+                          Text="{Binding DataContext.Quantity}"
                           TextColor="white"
                           FontSize="Large"/>
                   <Entry HorizontalOptions="FillAndExpand"
@@ -101,7 +101,7 @@
                             TextColor="Gray"
                           HeightRequest="20"
                           Placeholder="0"
-                         Text="{Binding Quantity}"/>
+                         Text="{Binding Quantity,Mode=TwoWay}"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="CenterAndExpand"

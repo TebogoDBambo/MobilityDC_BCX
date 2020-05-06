@@ -16,7 +16,7 @@
                        TextColor="Gray"
                        WidthRequest="200"
                        HorizontalOptions="Center"
-                       Text="{Binding SearchFromLocationCode, Mode=OneWay}"/>
+                       Text="{Binding SearchFromLocationCode, Mode=TwoWay}"/>
             </StackLayout>
             <StackLayout WidthRequest="30">
                 <ImageButton
@@ -32,7 +32,7 @@
                          TextColor="Gray"
                          WidthRequest="200"
                          HorizontalOptions="Center"
-                         Text="{Binding SearchProduct, Mode=OneWay}"/>
+                         Text="{Binding SearchProduct, Mode=TwoWay}"/>
               </StackLayout>
               <StackLayout WidthRequest="30">
                   <ImageButton
@@ -47,7 +47,7 @@
                         TextColor="Gray"
                     WidthRequest="200"
                     HorizontalOptions="Center"
-                   Text="{Binding SearchBarcode, Mode=OneWay}"/>
+                   Text="{Binding SearchBarcode, Mode=TwoWay}"/>
               </StackLayout>
             <StackLayout WidthRequest="30">
                 <ImageButton
@@ -62,7 +62,7 @@
                         TextColor="Gray"
                     WidthRequest="200"
                     HorizontalOptions="Center"
-                   Text="{Binding SearchDocumentNo, Mode=OneWay}"/>
+                   Text="{Binding SearchDocumentNo, Mode=TwoWay}"/>
               </StackLayout>
              <StackLayout WidthRequest="30">
                 <ImageButton

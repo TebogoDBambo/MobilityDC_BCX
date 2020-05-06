@@ -1,3 +1,11 @@
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.Android.dll
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.Android.pdb
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc.apk
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc.aab
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc-Signed.aab
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc-Signed.apk
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.dll
+C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.pdb
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\build.props
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\adb.props
@@ -31,14 +39,6 @@ C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\Mobi
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\R.txt
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\R.cs.flag
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\MobilityDC.Android.csproj.CoreCompileInputs.cache
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.Android.dll
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.Android.pdb
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc.apk
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc.aab
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc-Signed.aab
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\com.companyname.mobilitydc-Signed.apk
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.dll
-C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\bin\Debug\MobilityDC.pdb
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\XamlC.stamp
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\MobilityDC.Android.csproj.CopyComplete
 C:\Development\Dolfin\Trunk\MobilityDC SingleTask APP\MobilityDC\MobilityDC\MobilityDC.Android\obj\Debug\90\MobilityDC.Android.dll

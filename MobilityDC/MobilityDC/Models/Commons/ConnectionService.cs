@@ -71,8 +71,11 @@ namespace MobilityDC.Models.Commons
                 {
                     request.Headers.Add("Authorization", String.Format("bearer {0}", AppSession.AccessToken));
                 }
+                
+                if (body == null)
+                    body = new Result();
 
-                string postData = JsonConvert.SerializeObject(body);
+                string postData = JsonConvert.SerializeObject(body,new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore});
                 byte[] byteArray = Encoding.UTF8.GetBytes(postData);
                 // Set the ContentType property of the WebRequest.
                 request.ContentType = ContentType.JSon;
@@ -185,11 +188,56 @@ namespace MobilityDC.Models.Commons
             }
         }
 
+        #region FinePick
+        public static Result SearchFinePick(FinePickModelSearch searchModel, int userId, bool CycleStores)
+        {
+            if (CycleStores)
+            {
+                return Connect(searchModel, MethodType.Post, $"{Server}finepick/search/cycle/{userId}");
+            }
+            else
+            {
+                return Connect(searchModel, MethodType.Post, $"{Server}finepick/search/{userId}");
+            }
+        }
+        public static Result CompleteFinePickTask(GetNextTaskModel taskModel, int userId, string status, int execTaskId, bool CycleStores)
+        {
+            if (CycleStores)
+            {
+                return Connect(taskModel, MethodType.Post, $"{Server}finepick/next/cycle/{userId}/{status}/{execTaskId}");
+            }
+            else
+            {
+                return Connect(taskModel, MethodType.Post, $"{Server}finepick/next/{userId}/{status}/{execTaskId}");
+            }
+        }
+        #endregion
+
+        #region BulkPick
         public static Result SearchBulkPick(BulkPickModelSearch searchModel, int userId)
         {
             return Connect(searchModel, MethodType.Post, String.Format("{0}bulkpick/search/{1}", Server, userId));
         }
 
+        public static Result CompleteBulkPickTask(GetNextTaskModel taskModel, int userId, string status, int execTaskId)
+        {
+            return Connect(taskModel, MethodType.Post, $"{Server}bulkpick/next/{userId}/{status}/{execTaskId}");
+        }
+        #endregion
 
+        public static Result ExitCurrentTask(GetNextTaskModel taskModel)
+        {
+            return Connect(taskModel, MethodType.Post, $"{Server}wavepick/exittask");
+        }
+
+        public static Result ValidateUsertask(int UserId, int taskDetailID)
+        {
+            return Connect(null, MethodType.Post, $"{Server}user/validatetask/{UserId}/{taskDetailID}");
+        }
+
+        public static Result GetSKUForBarcode(string barCode, int userId)
+        {
+            return Connect(new SKUValidationModel { SKUCode = barCode, BarCode = barCode }, MethodType.Post, String.Format("{0}finepick/validatebarcode/{1}", Server, barCode));
+        }
     }
 }

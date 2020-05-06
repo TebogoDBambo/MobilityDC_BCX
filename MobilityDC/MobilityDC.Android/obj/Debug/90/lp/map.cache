@@ -39,3 +39,12 @@ Xamarin.Android.Support.ViewPager
 Xamarin.Essentials
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
+Autofac
+Autofac.Extras.CommonServiceLocator
+CommonServiceLocator
+MobilityDC
+Newtonsoft.Json
+System.Runtime
+Xamarin.Forms.Core
+Xamarin.Forms.Xaml
+Microsoft.Bcl.AsyncInterfaces
